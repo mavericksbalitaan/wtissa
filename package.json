@@ -1,0 +1,33 @@
+{
+  "name": "wtissa",
+  "version": "1.0.0",
+  "description": "",
+  "source": [
+    "src/home.html",
+    "src/index.html",
+    "src/about.html",
+    "src/isstracker.html"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "dev": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavericks-db/wtissa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavericks-db/wtissa/issues"
+  },
+  "homepage": "https://github.com/mavericks-db/wtissa#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./css/style.scss" rel="stylesheet" />
+  <link href="./css/home.scss" rel="stylesheet" />
+  <title>Where the ISS at?</title>
+</head>
+
+<body>
+  <my-header></my-header>
+  <div class="home__container">
+    <div class="home-wrapper">
+      <button class="navBtn" type="button" id="left">&lt;</button>
+      <img id="carousel" src="./assets/images/00.jpg" alt="" draggable="false" data-index="0" />
+      <button class="navBtn" type="button" id="right">&gt;</button>
+    </div>
+  </div>
+  <script src="./js/customheader.js"></script>
+  <script type="module" src="./js/carousel.js"></script>
+</body>
+
+</html>

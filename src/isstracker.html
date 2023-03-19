@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link href="./css/style.scss" rel="stylesheet" />
+    <link href="./css/tracker.scss" rel="stylesheet" />
+    <title>Where the ISS at?</title>
+  </head>
+
+  <body>
+    <my-header></my-header>
+    <div class="wrapper">
+      <div class="details">
+        <h2>
+          ISS
+          <span>
+            <img src="iss.svg" alt="" width="50px" />
+          </span>
+        </h2>
+        <h4>
+          Latitude:
+          <span id="pLat"></span>
+          °
+        </h4>
+        <h4>
+          Longitude:
+          <span id="pLon"></span>
+          °
+        </h4>
+        <h4>
+          Altitude:
+          <span id="pAlt"></span>
+          km
+        </h4>
+        <h4>
+          Velocity:
+          <span id="pVel"></span>
+          km/hr
+        </h4>
+        <br />
+        <h2>
+          You
+          <span>
+            <img src="./assets/images/marker.png" alt="" width="16px" />
+          </span>
+        </h2>
+
+        <h4>
+          Latitude:
+          <span id="uLat"></span>
+          °
+        </h4>
+        <h4>
+          Longitude:
+          <span id="uLon"></span>
+          °
+        </h4>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/customheader.js"></script>
+  </body>
+</html>

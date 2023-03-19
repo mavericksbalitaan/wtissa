@@ -1,0 +1,40 @@
+@import "./style.scss";
+
+.wrapper {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "details map";
+}
+
+#map {
+  grid-area: "map";
+  width: 50vw;
+  height: 500px;
+  animation: transition 1s linear;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  grid-area: "details";
+  padding: 2rem;
+  background-color: rgba($color: #fff, $alpha: 0.9);
+  background-repeat: no-repeat;
+  animation: transition 1s linear;
+  color: $purple-clr;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #map {
+    width: 80vw;
+    height: 200px;
+  }
+}

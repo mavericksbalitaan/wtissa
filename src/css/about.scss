@@ -1,0 +1,53 @@
+@import "./style.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  color: #fff;
+  font-family: sans-serif;
+  width: 100vw;
+  padding: 4rem 2rem;
+}
+
+.desc {
+  background-color: rgba($color: $purple-clr, $alpha: 0.5);
+  color: #fff;
+  padding: 1rem;
+  animation: transition 1s linear;
+}
+
+.img-container {
+  animation: transition 1s linear;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .desc {
+    margin-top: 8rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .img-container {
+    img {
+      width: 90vw;
+    }
+  }
+}

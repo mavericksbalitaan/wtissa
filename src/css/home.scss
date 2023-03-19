@@ -1,0 +1,54 @@
+@import "./style.scss";
+
+.navBtn {
+  font-size: 1.15rem;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: #242424;
+  color: #fff;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #242424;
+  }
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+}
+
+#right {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+}
+
+.home__container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-wrapper {
+  border: 1px dotted #fff;
+  border-radius: 1rem;
+  width: 75%;
+  transition: 0.2s;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #carousel {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+}
